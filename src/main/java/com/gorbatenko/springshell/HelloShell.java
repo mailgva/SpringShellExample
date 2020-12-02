@@ -17,4 +17,9 @@ public class HelloShell {
     public String helloTo(@ShellOption({"username", "u"}) String username) {
         return helloService.helloTo(username);
     }
+
+    @ShellMethod("buy to name and age")
+    public String byeTo(String name, int age) {
+        return helloService.byeTo(name, age);
+    }
 }
